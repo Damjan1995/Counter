@@ -1,0 +1,69 @@
+//Reset function
+const resetValue = function(){
+    counter = 0;
+    numberValue.innerHTML = counter;
+    if(counter >= 0 || counter <= 0){
+        numberValue.style.color = 'Black';
+        
+    }
+    
+}
+
+// Add function
+const addValue = function(){
+    counter++;
+    numberValue.innerHTML = counter;
+    if(counter > 0){
+        numberValue.style.color = 'Green'
+    }
+}
+
+// Decrese function
+const decreseValue = function(){
+    counter--;
+    numberValue.innerHTML = counter;
+    if(counter <= 0){
+        numberValue.style.color = 'Red';
+    }
+}
+
+// Events on all of the buttons
+btnDecrese.addEventListener('click', decreseValue);
+btnReset.addEventListener('click', resetValue);
+btnIncrese.addEventListener('click', addValue);
+
+
+
+--------------------------------------------------------
+
+FINALEN KOD
+
+
+
+btns.forEach(function(btn){
+    btn.addEventListener('click', function(e){
+    const style = e.currentTarget.classList;
+    if(style.contains('decrese')){
+    counter--;
+    numberValue.textContent = counter;
+    } else if(style.contains('increase')){
+        counter++;
+        numberValue.textContent = counter;
+    }else if(style.contains('reset')){
+       counter = 0;
+       numberValue.textContent = 0;
+    }
+    if(counter > 0){
+        numberValue.style.color = 'Green'
+    } 
+    if(counter < 0){
+        numberValue.style.color = 'Red'
+    } 
+    
+    if(counter == 0){
+        numberValue.style.color = 'Black'
+    }
+    })
+   
+})
+

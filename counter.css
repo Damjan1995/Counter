@@ -1,0 +1,60 @@
+body{
+    background-color: #E5F9DB;
+    text-align: center;
+    margin: auto;
+    padding-top: 10%;
+}
+
+.el-style{
+    color: #212A3E;
+    font-size: 40px;
+    font-family: 'Roboto';
+}
+
+.value{
+    font-size: 80px;
+    font-family:sans-serif;
+    font-weight: bold;
+}
+
+.buttons{
+   display: flex;
+   justify-content: center;
+   gap: 20px;
+}
+
+/* BUTTONS STYLES */
+
+.decrese{
+border-radius: 8px;
+padding: 10px;
+background-color: white;
+color: black;
+font-family: 'Roboto';
+border: 2px solid red;
+font-size: 17px;
+width: 100px;
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.reset{
+border-radius: 8px;
+background-color: white;
+color: black;
+font-family: 'Roboto';
+border: 2px solid black;
+font-size: 17px;
+width: 100px;
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.increase{
+border-radius: 8px;
+background-color: white;
+color: black;
+font-size: 17px;
+font-family: 'Roboto';
+border: 2px solid green;
+width: 100px;
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
